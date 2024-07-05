@@ -96,7 +96,7 @@ export default function Home() {
     <>
       <div className="rare_banner">
         <div className="rare_banner_wrap">
-          <div className="rare_banner_circle mt-5">
+          <div className="rare_banner_circle">
             <Banner>
               <Container fluid>{BannerCaption()}</Container>
             </Banner>

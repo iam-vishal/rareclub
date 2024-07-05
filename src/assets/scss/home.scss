@@ -9,7 +9,7 @@
   .rare_banner_wrap {
     background: linear-gradient(180deg, #131313 0%, rgba(19, 19, 19, 0) 100%);
     border-radius: 50px;
-    margin-top: 30px;
+    margin-top: 0px;
     height: 860px;
     text-align: center;
     position: relative;
@@ -73,7 +73,7 @@
     }
     .rare_banner_circle {
       position: absolute;
-      top: 15%;
+      top: 20%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
