@@ -409,12 +409,16 @@ export default function Home() {
                 <a
                   className="btn btn-outline-green"
                   // onClick={handleModal}
+                  href="https://forms.gle/3SQdiYhoxz7Jrc2V9"
+                  target="_blank"
                 >
                   Join creator waitlist
                 </a>
                 <a
                   className="btn btn-outline-green ms-4"
                   // onClick={handleModal}
+                  href="https://forms.gle/mpp6FCru4HmZgbeB7"
+                  target="_blank"
                 >
                   Join brand waitlist
                 </a>
