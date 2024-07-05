@@ -96,7 +96,7 @@ export default function Home() {
     <>
       <div className="rare_banner">
         <div className="rare_banner_wrap">
-          <div className="rare_banner_circle">
+          <div className="rare_banner_circle mt-5">
             <Banner>
               <Container fluid>{BannerCaption()}</Container>
             </Banner>
@@ -340,7 +340,10 @@ export default function Home() {
                         reverse={true}
                       />
                       <div className="collaborations_head">
-                        <h1>Collaborations that fits your niche</h1>
+                        <h1>
+                          Collaborations that fits
+                          <br /> your niche
+                        </h1>
                       </div>
                       <div className="btn btnred">Travel</div>
                       {/* <div className="btn btnpurple">Food</div> */}
