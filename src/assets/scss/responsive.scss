@@ -1,0 +1,525 @@
+@mixin ContainerFluid() {
+  .container-fluid {
+    --bs-gutter-x: 1.5rem;
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+  .btn-outline-green,
+  .btn-outline-grey {
+    padding: 1rem 1.5rem;
+    font-size: 13px;
+  }
+  header {
+    .navbar {
+      @include ContainerFluid();
+    }
+  }
+  //about us
+
+  .why_we {
+    padding: 2em 0 !important;
+    .content {
+      text-align: center;
+      h2 {
+        text-align: center !important;
+        font-size: 30px !important;
+      }
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
+  .backed_by {
+    padding: 2em 0 !important;
+    @include ContainerFluid();
+    .backed_box {
+      h4 {
+        font-size: 28px !important;
+        margin-bottom: 30px !important;
+      }
+    }
+    .hstack {
+      flex-direction: column;
+    }
+  }
+  //Homepage
+  .rare_banner {
+    padding-bottom: 0 !important;
+    .container-fluid {
+      --bs-gutter-x: 1.5rem;
+      padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+      padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    }
+    .rare_banner_wrap {
+      height: 700px !important;
+      ::before{
+        height: 10% !important;
+      }
+    }
+    .btn {
+      padding: 1.2rem 1.5rem;
+      font-size: 15px;
+    }
+    .rare_banner_circle {
+      .orbit {
+        ul[class^="ring"] li {
+          width: 60px;
+          height: 60px;
+        }
+        .orbit-icon {
+          width: 60px;
+          height: 60px;
+        }
+        .orbit-wrap {
+          font-size: 2.8em;
+        }
+      }
+      .rare_banner_content {
+        width: 350px;
+        bottom: auto;
+        transform: translate(-50%, -25%) !important;
+        .rare_banner_subtitle {
+          max-width: 280px;
+          font-size: 12px;
+          .subt {
+            padding: 13px;
+          }
+        }
+        .rare_banner_title {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .our_mission {
+    padding: 2em 0 !important;
+  }
+  .why_choose_us {
+    padding: 2rem 0;
+    .entertainment-bg {
+      display: none;
+    }
+    .bottoms {
+      .circle_image {
+        background: #0000006d;
+      }
+    }
+    .fetured_wrap_boxed {
+      margin-top: 0px !important;
+      background: transparent !important;
+      margin-bottom: 10px;
+      padding: 0 !important;
+      &::before,
+      &::after {
+        display: none;
+      }
+      .fetured_boxed {
+        margin-bottom: 20px;
+        .advBtn {
+          flex-direction: column;
+          gap: 10px;
+          align-items: flex-start;
+        }
+      }
+    }
+    &.single_content {
+      .duplicate {
+        h1 {
+          font-size: 30px !important;
+          line-height: 60px !important;
+        }
+      }
+    }
+    &.creaters_choose {
+      .boxed {
+        padding: 20px !important;
+        h1 {
+          font-size: 30px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .choose_team {
+          margin-top: 30px;
+          .choose_team_box {
+            &::before {
+              height: 70%;
+            }
+          }
+          .choose_team_content {
+            .hstack {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
+        }
+      }
+    }
+    .boxed {
+      margin-top: 0;
+      padding: 20px 0 !important;
+      &::before {
+        display: none;
+      }
+      .duplicate {
+        h1 {
+          font-size: 35px;
+          margin-bottom: 25px !important;
+        }
+        p {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+  .exclusive_offers {
+    padding:  0 !important;
+    .exclusive_left_content {
+      &::before {
+        background: rgb(13 13 13 / 74%) !important;
+      }
+      .ellipse_svg {
+        width: 500px !important;
+        height: 500px !important;
+        svg {
+          width: 500px;
+          height: 500px;
+        }
+      }
+      .circle_button {
+        .circle_image {
+          bottom: -1em !important;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          .circle_arrow {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      .contents {
+        h3 {
+          font-size: 40px;
+          background-image: linear-gradient(
+            109.44deg,
+            #ffffff85 18.97%,
+            rgba(255, 255, 255, 0.186) 93.48%
+          );
+        }
+      }
+    }
+    .exclusive_right_content {
+      padding: 0 !important;
+      margin-top: 80px;
+      .hstack {
+        .boxed {
+          padding: 60px 30px !important;
+          &:first-child,
+          &::before {
+            display: none;
+          }
+          h2 {
+            font-size: 25px !important;
+            background-image: linear-gradient(
+              109.44deg,
+              #7b7b7bd9 18.97%,
+              rgb(100 100 100 / 39%) 93.48%
+            ) !important;
+          }
+          p {
+            font-size: 15px;
+            color: #8b8b8b;
+          }
+        }
+      }
+    }
+  }
+  .collaborations {
+    overflow: hidden;
+    @include ContainerFluid();
+    &.usersonly {
+      .btn {
+        background: transparent;
+      }
+    }
+    .btn {
+      padding: 1.2rem 1.5rem !important;
+      font-size: 13px;
+    }
+    .collaborations_boxed {
+      .collaborations_head {
+        h1 {
+          font-size: 23px !important;
+          font-weight: 500 !important;
+        }
+      }
+      .crust {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      .crust > .btnpurple {
+        left: 35% !important;
+        top: 13% !important;
+      }
+      .outer {
+        .btn2 {
+          right: 22% !important;
+        }
+      }
+    }
+  }
+  .content_centric {
+    @include ContainerFluid();
+    img.radial {
+      display: none;
+    }
+    .content_centric_box {
+      padding: 25px;
+    }
+  }
+  .featured_content {
+    padding: 3em 0 !important;
+    .content {
+      p {
+        font-size: 20px !important;
+      }
+    }
+  }
+  .join_waitlist {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    .heading {
+      h1 {
+        font-size: 2.5rem !important;
+      }
+    }
+    .all_team {
+      &::after,
+      &::before {
+        display: none;
+      }
+      .rfm-child {
+        width: 180px;
+        margin: 10px;
+      }
+      .team_box {
+        position: relative;
+        border-radius: 200px;
+        border: 2px solid #5a5a5a47;
+        overflow: hidden;
+        padding: 10px;
+        img {
+          border-radius: 120px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  .our_brands {
+    img.coupon {
+      display: none;
+    }
+  }
+
+  .footer {
+    --bs-gutter-x: 1.5rem;
+    &::before {
+      display: none;
+    }
+    .ps-0 {
+      padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    }
+    .pe-0 {
+      padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+    }
+    @include ContainerFluid();
+    .left_content {
+      .brand {
+        gap: 2em !important;
+        font-size: 14px;
+        color: #a0a0a0;
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+      .content {
+        font-size: 20px !important;
+      }
+    }
+    .right_content {
+      &::before {
+        display: none;
+      }
+      .item_link {
+        font-size: 20px !important;
+        padding: 10px 0 !important;
+      }
+    }
+    .copyright {
+      .hstack {
+        text-align: center;
+        display: block;
+        p {
+          margin-bottom: 20px !important;
+        }
+        a {
+          margin: 0 20px;
+        }
+      }
+      button {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  //creaters
+  .hero_section {
+    padding-bottom: 2em !important;
+    &::before {
+      display: none;
+    }
+    .caption {
+      h1 {
+        font-size: 40px;
+        line-height: 54px;
+        margin-bottom: 30px;
+      }
+      svg {
+        display: none;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  //top_brands
+  .top_brands {
+    .left {
+      display: none;
+    }
+    .brands_wrap {
+      padding: 20px !important;
+      border-radius: 20px;
+      .content {
+        h3 {
+          font-size: 25px !important;
+        }
+        p {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+  .collaborate {
+    h1 {
+      font-size: 24px !important;
+      line-height: 35px !important;
+    }
+    .all_collaborate {
+      &::before,
+      &::after {
+        width: 100px !important;
+      }
+    }
+  }
+  //about_us
+  .about_us {
+    @include ContainerFluid();
+  }
+  //discount_section
+  .discount_section {
+    @include ContainerFluid();
+    .heading {
+      h1 {
+        font-size: 35px;
+      }
+    }
+    .dicount_box {
+      margin: 0 0 40px;
+    }
+  }
+  .contact_us {
+    @include ContainerFluid();
+    .contact_head {
+      margin-bottom: 30px !important;
+      h3 {
+        font-size: 35px !important;
+        line-height: 65px;
+      }
+    }
+    .contact_desc {
+      margin-bottom: 40px;
+    }
+  }
+  .contact_form {
+    @include ContainerFluid();
+    .caption {
+      text-align: center;
+      margin-bottom: 60px;
+      h1 {
+        margin-bottom: 30px !important;
+      }
+    }
+    .formwrap {
+      .h-line {
+        margin-bottom: 10px;
+      }
+      .form_elements {
+        gap: 1em;
+        margin-bottom: 10px;
+        .form_count {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+        }
+        .form_input {
+          label {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+    .action_btns {
+      .action_wrap {
+        gap: 10px !important;
+      }
+    }
+  }
+  //faq
+  .faq {
+    padding: 3em 0 !important;
+    .heading {
+      h1 {
+        font-size: 30px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+    .all_faqs {
+      margin-top: 30px !important;
+      .nav-pills {
+        gap: 1em !important;
+        .nav-item {
+          .nav-link {
+            padding: 15px 30px;
+          }
+        }
+      }
+    }
+  }
+}

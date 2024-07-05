@@ -1,0 +1,82 @@
+@mixin GredientText($fontSize, $align, $mb) {
+  font-size: $fontSize;
+  font-weight: 400;
+  text-align: $align;
+  margin-bottom: $mb;
+  background-image: linear-gradient(
+    109deg,
+    #fff 14%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.our_team {
+  padding: 5em 0;
+  .container-fluid {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+  h1 {
+    @include GredientText(60px, left, 60px);
+  }
+  .team_boxed {
+    .nav-item {
+      margin-bottom: 20px;
+      .nav-link {
+        border-radius: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.21);
+        background-color: rgba(107, 107, 107, 0.3);
+        padding: 25px 20px;
+        overflow: hidden;
+        color: rgba(255, 255, 255, 0.43);
+        &.active {
+          color: #fff;
+          border: 1px solid rgba(255, 255, 255, 0.34);
+        }
+        .department_box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .icon {
+            img {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+    }
+    .memberList {
+      padding: 0 50px;
+      .member-item {
+        margin: 0 10px 40px;
+        .member-img {
+          padding: 20px;
+          border: 1px solid #5a5a5a;
+          border-radius: 140px;
+          overflow: hidden;
+          img {
+            border-radius: 120px;
+          }
+        }
+        .member_content {
+          margin-top: 20px;
+          text-align: center;
+          .title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+          .designation {
+            color: #7c7c7c;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

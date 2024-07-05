@@ -1,0 +1,280 @@
+@mixin GredientText($fontSize, $align, $mb) {
+  font-size: $fontSize;
+  font-weight: 400;
+  text-align: $align;
+  margin-bottom: $mb;
+  background-image: linear-gradient(
+    109deg,
+    #fff 18.97%,
+    rgba(255, 255, 255, 0.359) 93.48%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.about_us {
+  padding: 5em 0;
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 300px;
+  }
+  &::before {
+    left: 0;
+    background: #9747ff4f;
+    filter: blur(200px);
+  }
+  &::after {
+    right: 0;
+    background: #00ef8e3d;
+    filter: blur(200px);
+  }
+  .heading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      @include GredientText(60px, center, 0px);
+    }
+  }
+}
+.why_we {
+  padding: 5em 0;
+  .container-fluid {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+  .content {
+    h2 {
+      @include GredientText(45px, left, 40px);
+      background-image: linear-gradient(
+        109deg,
+        #fff 18.97%,
+        rgba(255, 255, 255, 0.196) 100%
+      );
+    }
+    p {
+      color: #828282;
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+  }
+}
+.backed_by {
+  padding: 5em 0;
+  .container-fluid {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .backed_box {
+    padding: 30px;
+    h4 {
+      font-size: 50px;
+      background: linear-gradient(
+        109deg,
+        #fff 18.97%,
+        rgba(255, 255, 255, 0) 73.48%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 60px;
+    }
+    p {
+      color: #828282;
+      font-size: 18px;
+      line-height: 32px; /* 160% */
+    }
+  }
+  .backed_card {
+    border-radius: 50px;
+    background: #131313;
+    &:first-child {
+      .icon {
+        &::before {
+          left: -5%;
+        }
+      }
+    }
+    &:last-child {
+      .icon {
+        &::before {
+          right: -5%;
+        }
+      }
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+      padding: 35px;
+      border-bottom: 3px dashed #0d0d0d;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -15%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #0d0d0d;
+      }
+      .title {
+        color: #ffd400;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .content {
+      padding: 35px;
+      p {
+        color: #828282;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.our_mission {
+  padding: 5em 0;
+  .heading {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    h1 {
+      @include GredientText(50px, center, 40px);
+    }
+    img.img-fluid {
+      position: relative;
+      top: -2.5rem;
+      z-index: -1;
+    }
+  }
+  .mission_card {
+    text-align: center;
+    .boxed {
+      border-radius: 80px;
+      background: #131313;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        margin-bottom: 30px;
+      }
+      .title {
+        color: #a3a3a3;
+        font-size: 22px;
+      }
+    }
+  }
+}
+.why_choose_us {
+  .fetured_wrap_boxed {
+    overflow: hidden;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      background: #111111b8;
+      z-index: 1;
+    }
+    &::before {
+      content: "";
+      top: 0;
+    }
+    &::after {
+      content: "";
+      bottom: 0;
+    }
+  }
+  .fetured_boxed {
+    padding: 35px !important;
+    .brandtitle {
+      font-size: 38px;
+      background: linear-gradient(
+        94deg,
+        rgba(241, 241, 241, 0.51) -7.06%,
+        rgba(241, 241, 241, 0) 114.43%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+    .desc {
+      margin-bottom: 30px;
+      color: #595959;
+      font-size: 18px;
+    }
+    .download_box {
+      border-radius: 100px;
+      border: 0.25px solid #fff;
+      background: #101010;
+      padding: 10px 20px;
+      .content {
+        .subtitle {
+          color: #fff;
+          font-size: 10px;
+        }
+        .title {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .bottoms {
+    .ellipse_svg {
+      width: 52rem;
+      height: 52rem;
+      bottom: -10px;
+      right: 20%;
+      position: absolute;
+      z-index: -1;
+    }
+    .circle_image {
+      position: relative;
+      margin-left: 5em;
+      display: inline-block;
+      border: 2px solid rgba(255, 255, 255, 0.444);
+      border-radius: 100%;
+      padding: 25px;
+      .circle_arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.04);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+  .heading {
+    h1 {
+      font-size: 48px !important;
+      @include GredientText(60px, center, 0px);
+    }
+  }
+}

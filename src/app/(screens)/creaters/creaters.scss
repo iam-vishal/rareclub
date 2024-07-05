@@ -1,0 +1,54 @@
+.our_brands {
+  padding: 3em 0;
+}
+
+.collaborate {
+  padding: 5em 0;
+  h1 {
+    text-align: center;
+    color: #808080;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 104.375% */
+    margin-bottom: 60px;
+  }
+  .all_collaborate {
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      z-index: 9;
+    }
+    &::before {
+      left: 0;
+      background: linear-gradient(90deg, #0e0f0e 25%, rgba(13, 13, 13, 0) 100%);
+    }
+    &::after {
+      right: 0;
+      background: linear-gradient(
+        -90deg,
+        #0e0f0e 25%,
+        rgba(13, 13, 13, 0) 100%
+      );
+    }
+    .rfm-child {
+      width: 180px;
+    }
+    .collab_box {
+      border-radius: 202.332px;
+      border: 1px solid #5a5a5a33;
+      padding: 8px;
+      margin-bottom: 20px;
+      .content {
+        border-radius: 200px;
+        background: rgba(99, 99, 99, 0.09);
+        padding: 20px;
+      }
+    }
+  }
+}
