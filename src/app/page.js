@@ -156,7 +156,7 @@ export default function Home() {
                     }}
                     initial={{ opacity: 0, left: 0 }}
                   >
-                    <Image
+                    <img
                       src={EXPLOREBTN.src}
                       width={120}
                       height={120}
@@ -185,7 +185,7 @@ export default function Home() {
                       gap={3}
                     >
                       <div className="overflow-hidden">
-                        <Image
+                        <img
                           src={RARECLUB.src}
                           width={10}
                           height={200}
@@ -201,7 +201,7 @@ export default function Home() {
                         />
                       </div>
                       <div className="barcode">
-                        <Image
+                        <img
                           src={BARCODE.src}
                           width={40}
                           height={100}

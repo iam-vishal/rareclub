@@ -47,7 +47,7 @@ function Header() {
         >
           <Container fluid>
             <Navbar.Brand href="/" as={Link}>
-              <Image
+              <img
                 src={LOGO.src}
                 alt="rare club"
                 width={120}

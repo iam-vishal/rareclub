@@ -5,4 +5,5 @@ module.exports = {
     includePaths: [path.join(__dirname, "src/assets/scss")],
   },
   reactStrictMode: true,
+  output: "export",
 };

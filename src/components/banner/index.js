@@ -18,7 +18,7 @@ const Banner = ({ children }) => (
         <li>
           <ul class="ring-1">
             <li>
-              <Image
+              <img
                 src={INF4.src}
                 width={80}
                 height={80}
@@ -27,7 +27,7 @@ const Banner = ({ children }) => (
               />
             </li>
             <li>
-              <Image
+              <img
                 src={INF8.src}
                 width={80}
                 height={80}
@@ -40,7 +40,7 @@ const Banner = ({ children }) => (
         <li>
           <ul class="ring-2">
             <li>
-              <Image
+              <img
                 src={INF14.src}
                 width={80}
                 height={80}
@@ -49,7 +49,7 @@ const Banner = ({ children }) => (
               />
             </li>
             <li>
-              <Image
+              <img
                 src={INF5.src}
                 width={40}
                 height={15}
@@ -62,7 +62,7 @@ const Banner = ({ children }) => (
         <li>
           <ul class="ring-3">
             <li>
-              <Image
+              <img
                 src={INF30.src}
                 width={40}
                 height={15}
@@ -71,7 +71,7 @@ const Banner = ({ children }) => (
               />
             </li>
             <li>
-              <Image
+              <img
                 src={INF13.src}
                 width={40}
                 height={15}

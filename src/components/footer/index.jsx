@@ -53,7 +53,7 @@ const Footer = (props) => {
           <Col lg="5" className="pe-0">
             <div className="left_content">
               <div className="brand">
-                <Image src={LOGO.src} alt="rare club" width={160} height={60} />
+                <img src={LOGO.src} alt="rare club" width={160} height={60} />
                 <span>by Kofluence</span>
               </div>
               <div className="useful_media">
