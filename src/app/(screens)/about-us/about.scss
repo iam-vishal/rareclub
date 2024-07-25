@@ -5,9 +5,10 @@
   margin-bottom: $mb;
   background-image: linear-gradient(
     109deg,
-    #fff 18.97%,
-    rgba(255, 255, 255, 0.359) 93.48%
+    #bcbcbc 18.97%,
+    #bcbcbc 93.48%
   );
+  // opacity: 0.5 !important;
   background-size: 100%;
   background-repeat: repeat;
   background-clip: text;
@@ -55,11 +56,11 @@
   .content {
     h2 {
       @include GredientText(45px, left, 40px);
-      background-image: linear-gradient(
-        109deg,
-        #fff 18.97%,
-        rgba(255, 255, 255, 0.196) 100%
-      );
+      // background-image: linear-gradient(
+      //   109deg,
+      //   #fff 18.97%,
+      //   rgba(255, 255, 255, 0.196) 100%
+      // );
     }
     p {
       color: #828282;
@@ -81,7 +82,7 @@
       background: linear-gradient(
         109deg,
         #fff 18.97%,
-        rgba(255, 255, 255, 0) 73.48%
+        #fff 73.48%
       );
       background-clip: text;
       -webkit-background-clip: text;

@@ -208,7 +208,7 @@
 }
 
 .exclusive_offers {
-  padding: 5em 0;
+  padding: 3em 0;
   overflow: hidden;
   .exclusive_left_content {
     padding: 40px;
@@ -301,8 +301,8 @@
           @include GredientText(40px, left, 50px);
           background-image: linear-gradient(
             109.44deg,
-            #7b7b7b 96%,
-            rgba(100, 100, 100, 0) 93.48%
+            #fff 96%,
+            #fff 93.48%
           );
           padding-right: 20px;
         }

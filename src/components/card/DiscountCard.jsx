@@ -15,24 +15,27 @@ const DiscountCard = ({ item }) => {
               <Handshake
                 width={80}
                 height={80}
-                strokeWidth={1}
-                className="opacity-25"
+                strokeWidth={1.5}
+                className="opacity-1"
+                color="#00ef8e"
               />
             )}
             {item.title === "Transparency & Trust" && (
               <BookOpenCheck
                 width={80}
                 height={80}
-                strokeWidth={1}
-                className="opacity-25"
+                strokeWidth={1.5}
+                className="opacity-1"
+                color="#00ef8e"
               />
             )}
             {item.title === "Exclusive Community" && (
               <Users
                 width={80}
                 height={80}
-                strokeWidth={1}
-                className="opacity-25"
+                strokeWidth={1.5}
+                className="opacity-1"
+                color="#00ef8e"
               />
             )}
           </div>

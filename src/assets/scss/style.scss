@@ -221,7 +221,7 @@ header {
   }
 }
 .why_choose_us {
-  padding: 8rem 7vw;
+  padding: 8rem 7vw 4rem 7vw;
   position: relative;
   overflow: hidden;
   &.newBg {
@@ -281,11 +281,11 @@ header {
       text-align: center;
       h1 {
         @include GredientText(60px, center, 60px);
-        background-image: linear-gradient(
-          94deg,
-          rgb(255, 255, 255) -7.06%,
-          rgba(241, 241, 241, 0) 114.43%
-        );
+        // background-image: linear-gradient(
+        //   94deg,
+        //   rgb(255, 255, 255) -7.06%,
+        //   rgba(241, 241, 241, 0) 114.43%
+        // );
         line-height: 80px;
       }
       a {
@@ -397,11 +397,11 @@ header {
     }
     h1 {
       @include GredientText(60px, center, 60px);
-      background-image: linear-gradient(
-        109deg,
-        #9d9898 99.97%,
-        rgba(255, 255, 255, 0) 93.48%
-      );
+      // background-image: linear-gradient(
+      //   109deg,
+      //   #9d9898 99.97%,
+      //   rgba(255, 255, 255, 0) 93.48%
+      // );
     }
     p {
       color: #595959;
@@ -416,11 +416,11 @@ header {
     margin-bottom: 60px;
     h1 {
       @include GredientText(80px, center, 80px);
-      background-image: linear-gradient(
-        94deg,
-        rgba(241, 241, 241, 0.51) -7.06%,
-        rgba(241, 241, 241, 0) 114.43%
-      );
+      // background-image: linear-gradient(
+      //   94deg,
+      //   rgba(241, 241, 241, 0.51) -7.06%,
+      //   rgba(241, 241, 241, 0) 114.43%
+      // );
     }
   }
   .all_team {
@@ -517,22 +517,13 @@ header {
         left: 50%;
         transform: translate(-50%, -40%);
 
-        &.whitetext {
-          h1 {
-            background-image: linear-gradient(
-              94deg,
-              #f1f1f1 -7.06%,
-              rgba(241, 241, 241, 0) 114.43%
-            );
-          }
-        }
         h1 {
           @include GredientText(50px, center, 0px);
-          background-image: linear-gradient(
-            109.44deg,
-            rgba(241, 241, 241, 0.51) 0% 18.97%,
-            rgba(255, 255, 255, 0.186) 93.48%
-          );
+          // background-image: linear-gradient(
+          //   109.44deg,
+          //   rgba(241, 241, 241, 0.51) 0% 18.97%,
+          //   rgba(255, 255, 255, 0.186) 93.48%
+          // );
           width: 950px;
         }
         p {
@@ -576,8 +567,8 @@ header {
           }
         }
         .mainbtn {
-          left: 3%;
-          top: 20%;
+          left: 20%;
+          bottom: 2%;
           &.img {
             left: 7%;
           }
@@ -597,14 +588,14 @@ header {
           .inner {
             @include concentricCircle(650px);
             .btnyellow {
-              left: 0;
-              top: 15%;
+              left: 20%;
+              top: 0;
               &.img {
                 left: 7%;
               }
             }
             .btngreen {
-              right: -10%;
+              right: -5%;
               top: 30%;
               &.img {
                 right: 0;
@@ -613,8 +604,8 @@ header {
             .core {
               @include concentricCircle(350px);
               .btnred {
-                top: 0;
-                left: 20px;
+                bottom: 0px;
+                left: 40px;
                 &.img {
                   left: 15%;
                 }
@@ -636,11 +627,11 @@ header {
   .heading {
     h1 {
       @include GredientText(50px, center, 80px);
-      background-image: linear-gradient(
-        94deg,
-        #f1f1f1 -7.06%,
-        rgba(241, 241, 241, 0) 114.43%
-      );
+      // background-image: linear-gradient(
+      //   94deg,
+      //   #f1f1f1 -7.06%,
+      //   rgba(241, 241, 241, 0) 114.43%
+      // );
     }
   }
   .container-fluid {

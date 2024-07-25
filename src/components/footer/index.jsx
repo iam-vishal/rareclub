@@ -123,19 +123,25 @@ const Footer = (props) => {
             <img src={FOOTERHR.src} className="img-fluid" alt="ARROW" />
             <div className="copyright">
               <br />
-              <Row>
+              <Row className="align-items-center">
                 <Col lg="9">
-                  <Stack direction="horizontal" gap={4}>
+                  <div className="d-flex flex-column flex-md-row align-items-center gap-4">
                     <p className="mb-0 text-muted">
-                      Copyright - Rare Club Inc. 2024.
+                      Copyright - Rare Club Inc. 2024
                     </p>
-                    <Link href="/privacy-policy" className="text-muted">
+                    <Link
+                      href="/privacy-policy"
+                      className="text-muted d-md-block"
+                    >
                       Privacy Policy
                     </Link>
-                    <Link href="/terms-condition" className="text-muted">
+                    <Link
+                      href="/terms-condition"
+                      className="text-muted d-md-block"
+                    >
                       Terms and conditions
                     </Link>
-                  </Stack>
+                  </div>
                 </Col>
                 <Col lg="3" className="text-end">
                   <Button

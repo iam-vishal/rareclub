@@ -220,9 +220,10 @@ export default function Home() {
                           <Plane
                             data-aos="fade-up"
                             data-aos-duration="2300"
-                            className="opacity-25"
+                            className="opacity-1"
                             size={64}
-                            strokeWidth={1}
+                            strokeWidth={1.5}
+                            color="#00ef8e"
                           />
                         </div>
 
@@ -244,9 +245,10 @@ export default function Home() {
                           <Hotel
                             data-aos="fade-up"
                             data-aos-duration="2300"
-                            className="opacity-25"
+                            className="opacity-1"
                             size={64}
-                            strokeWidth={1}
+                            strokeWidth={1.5}
+                            color="#00ef8e"
                           />
                         </div>
                         <p data-aos="fade-up" data-aos-duration="2300">
@@ -268,9 +270,10 @@ export default function Home() {
                           <CalendarCheck
                             data-aos="fade-up"
                             data-aos-duration="2300"
-                            className="opacity-25"
+                            className="opacity-1"
                             size={64}
-                            strokeWidth={1}
+                            strokeWidth={1.5}
+                            color="#00ef8e"
                           />
                         </div>
                         <p data-aos="fade-up" data-aos-duration="2300">
@@ -291,9 +294,10 @@ export default function Home() {
                           <Shirt
                             data-aos="fade-up"
                             data-aos-duration="2300"
-                            className="opacity-25"
+                            className="opacity-1"
                             size={64}
-                            strokeWidth={1}
+                            strokeWidth={1.5}
+                            color="#00ef8e"
                           />
                         </div>
                         <p data-aos="fade-up" data-aos-duration="2300">
@@ -322,7 +326,7 @@ export default function Home() {
             <div className="collaborations_boxed">
               <div className="crust">
                 <Circle style={{ width: 1200, height: 1200 }} reverse={false} />
-                <div className="btn btnpurple mainbtn">Makeup</div>
+                {/* <div className="btn btnpurple mainbtn">Makeup</div> */}
                 <div className="outer">
                   <Circle style={{ width: 950, height: 950 }} reverse={true} />
                   <div className="btn btn1 btngreen">Experiences</div>

@@ -21,9 +21,9 @@ import APPSTORE from "@/assets/img/appstore.png";
 import ARROW from "@/assets/img/svg/arrow.svg";
 import MISSION1 from "@/assets/img/mission1.png";
 import MISSION from "@/assets/img/mission_head.png";
-import INFLUENCE from "@/assets/img/elevate_influence.png";
-import BRANDING from "@/assets/img/branding.png";
-import SUPPORT from "@/assets/img/creator_support.png";
+import INFLUENCE from "@/assets/img/skill.svg";
+import BRANDING from "@/assets/img/brand-image.svg";
+import SUPPORT from "@/assets/img/support.svg";
 import KOFINITY from "@/assets/img/svg/kofinity.svg";
 import KOFLUENCE from "@/assets/img/svg/kofluence.svg";
 import BRANDS_LEFT from "@/assets/img/svg/brands_title.svg";
@@ -66,8 +66,8 @@ export default function AboutUs() {
         <div className="boxed">
           <img
             src={icon.src}
-            className="img-fluid opacity-50"
-            style={{ height: "120px" }}
+            className="img-fluid opacity-100"
+            style={{ height: "100px" }}
           />
           <div className="title">{title}</div>
         </div>

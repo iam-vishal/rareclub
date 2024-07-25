@@ -7,8 +7,9 @@ $primaryColor: #00ef8e;
   background-image: linear-gradient(
     109.44deg,
     #ffffff 18.97%,
-    rgba(255, 255, 255, 0) 93.48%
+    #ffffff 93.48%
   );
+  opacity: 0.5 !important;
   background-size: 100%;
   background-repeat: repeat;
   background-clip: text;
@@ -24,13 +25,13 @@ $primaryColor: #00ef8e;
   .contact_head {
     margin-bottom: 50px;
     h3 {
-      color: #e0e0e0;
+      color: #bfbfbf;
       font-size: 50px;
     }
   }
   .contact_desc {
     p {
-      color: #595959;
+      color: #bfbfbf;
       font-size: 18px;
       margin-bottom: 40px;
     }
@@ -73,12 +74,14 @@ $primaryColor: #00ef8e;
   .caption {
     margin-top: 30px;
     h4 {
+      color: #bfbfbf;
       font-size: 40px;
       line-height: 48px;
       margin-bottom: 40px;
     }
     p {
-      color: #595959;
+      // color: #7a7a7a;
+      color: #7a7a7a;
       font-size: 20px;
     }
   }
@@ -179,7 +182,7 @@ $primaryColor: #00ef8e;
       @include GredientText(40px, center, 60px);
     }
     p {
-      color: #595959;
+      color: #6e6e6e;
       font-size: 20px;
     }
   }
@@ -192,7 +195,7 @@ $primaryColor: #00ef8e;
           border-radius: 50px;
           border: 0.5px solid rgba(255, 255, 255, 0.277);
           padding: 30px 50px;
-          color: rgba(123, 123, 123, 0.5);
+          color: #7a7a7a;
           &.active {
             border-radius: 50px;
             border: 0.5px solid rgba(255, 255, 255, 0.41);
@@ -229,7 +232,7 @@ $primaryColor: #00ef8e;
           .accordion-button {
             --bs-accordion-btn-active-icon: url("./top_arrow_active.svg");
             --bs-accordion-btn-icon: url("./top_arrow.svg");
-            color: rgba(255, 255, 255, 0.18);
+            color: #7a7a7a;
             background-color: transparent;
             box-shadow: none;
             font-size: 1.5rem;
@@ -240,7 +243,7 @@ $primaryColor: #00ef8e;
           .accordion-body {
             padding: 30 40px;
             p {
-              color: #595959;
+              color: #7a7a7a;
             }
           }
         }

@@ -263,10 +263,10 @@
         width: 100% !important;
         height: 100% !important;
       }
-      .crust > .btnpurple {
-        left: 35% !important;
-        top: 13% !important;
-      }
+      // .crust > .btnpurple {
+      //   left: 35% !important;
+      //   top: 13% !important;
+      // }
       .outer {
         .btn2 {
           right: 22% !important;
@@ -341,7 +341,9 @@
     @include ContainerFluid();
     .left_content {
       .brand {
-        gap: 2em !important;
+        display: flex;
+        justify-content: center !important;
+        gap: 1em !important;
         font-size: 14px;
         color: #a0a0a0;
         img {
